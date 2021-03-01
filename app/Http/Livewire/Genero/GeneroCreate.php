@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Genero;
 use Livewire\Component;
 
 class GeneroCreate extends Component
