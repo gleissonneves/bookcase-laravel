@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Genero extends Model
 {
     use HasFactory;
+
+    /**
+     * Undocumented variable
+     */
+    protected $table = "generos";
+
+    /**
+     * Undocumented variable
+     */
+    protected $primaryKey = "id";
 }
