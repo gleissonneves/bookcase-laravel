@@ -6,7 +6,7 @@
         </div>
         <div class="flex flex-wrap">
             @foreach ($generos as $generos)
-                <div class="m-1 py-1 px-3 border border-indigo-600 rounded-full text-indigo-600 text-lg light font-extralight">
+                <div class="select-none m-1 py-1 px-3 border border-indigo-600 rounded-full text-indigo-600 text-lg light font-extralight">
                     {{$generos->nome}}
                 </div>
             @endforeach
