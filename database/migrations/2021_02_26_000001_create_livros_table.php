@@ -18,17 +18,11 @@ class CreateLivrosTable extends Migration
             $table->charset = 'utf8';
             $table->collation = 'utf8_general_ci';
 
-
             $table->id();
             $table->string('nome', 255);
             $table->text('descricao');
-            $table->date('data_publicacao');
+            $table->text('img_capa');
             $table->timestamps();
-        });
-
-
-        Schema::table('livros', function(Blueprint $table){
-            $table->text('url_capa');
         });
     }
 

@@ -8,9 +8,9 @@ use Livewire\Component;
 class BookEdite extends Component
 {
     public $livroId;
-    public $nome;
-    public $dataPublicacao;
+    public $nome;    
     public $descricao;
+    public $imgCapa;
 
     protected function rules()
     {
@@ -23,13 +23,10 @@ class BookEdite extends Component
 
     public function mount(Livro $livro)
     {
-        // $livro = Livro::find($livro);
-
-        
-        $this->nome    = $livro->nome;
-        $this->dataPublicacao = $livro->data_publicacao;
+        $this->nome      = $livro->nome;
         $this->descricao = $livro->descricao;
-        $this->livroId = $livro->id;
+        $this->imgCapa   = $livro->img_capa;
+        $this->livroId   = $livro->id;
     }
 
     /**
@@ -43,8 +40,8 @@ class BookEdite extends Component
 
         $livro->update([
             'nome' => $this->nome,
-            'data_publicacao' => $this->dataPublicacao,
             'descricao' => $this->descricao,
+            'img_capa' => $this->imgCapa,
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
 

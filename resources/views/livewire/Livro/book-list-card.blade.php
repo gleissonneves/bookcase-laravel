@@ -7,38 +7,29 @@
 </div>
 
 <div class="space-x-2 w-full">
-    <div class="flex w-full flex-row relative h-full items-center justify-items-center">
-        {{-- container grup card --}}
-        <div class="slick-scroll w-full h-full">
+    <div class="flex w-full flex-col relative h-full">
+        {{-- container grup card --}}        
             @foreach ($books as $book)
-            <div class="cursor-pointer flex flex-col m-1 py-1 px-3 border rounded bg-white shadow-md"
-                style="width: 275px; height:400px;">
-                <div class="" style="height: 310px;">
-                    <div class="w-full text-center text-indigo-600 text-2xl">
-                        <h1 class="text-base light font-extraligh">{{$book->nome}}</h1>
+            <div class="w-full bg-white m-3 rounded shadow-md" style="height:400px;">
+                <div class="flex flex-row">
+                    <div class="flex justify-center items-center px-3" style="weight:200px; height:400px;">
+                        <img src="{{$book->img_capa}}" alt="capa do livro" class="w-96" style="weight:200px; height:350px;">
                     </div>
 
-                    <img src="" alt="capa do livro">
-                </div>
-                {{-- footer card --}}
-                <div class="flex items-center flex-col" style="height: 80px;">
-                    <div class="flex bg-white">
-                        <div class="mr-2 h-20 w-20 rounded-full overflow-hidden relative bg-gray-200">
-                            <img src="{{ url('asset/img/user.svg') }}" alt="autor">
+                    <div class="px-3 py-2 h-full" style="weight:200px; height:400px;">
+                        <div class="text-indigo-600 text-base mb-2 break-normal">
+                            <h1 class="text-xl light font-extraligh">{{$book->nome}}</h1>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="mb-2 h-5 w-40 overflow-hidden relative text-bold">
-                                <p>Nome</p>
-                            </div>
-                            <div class="w-40 overflow-hidden relative">
-                                Escrevinhei mais de dez livros
-                            </div>
+
+                        <div class="text-gray-500 text-base font-light overflow-auto">
+                            <p class="mb-5">{{$book->descricao}}</p>
+                            <a href="/livro/edite/{{$book->id}}" class="bg-blue-500 text-white py-1 px-5 rounded-lg float-right">Editar</a>
+                            <a href="livro/excluir/{{$book->id}}" class="bg-red-400 text-white py-1 px-5 rounded-lg float-right mr-3">Excluir</a>
                         </div>
                     </div>
                 </div>
-            </div>            
-            @endforeach
-        </div>
+            </div>
+            @endforeach        
         {{-- end container grup card --}}
     </div>
 </div>

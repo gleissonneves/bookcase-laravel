@@ -8,15 +8,14 @@ use Livewire\Component;
 class BookCreate extends Component
 {
     public $nome;
-    public $dataPublicacao;
     public $descricao;
+    public $imgCapa;
 
 
     protected function rules()
     {
         return [
             'nome' => 'required|min:2',
-            'dataPublicacao' => 'required|min:10|max:10',
             'descricao' => 'required',
         ];
     }
@@ -31,13 +30,12 @@ class BookCreate extends Component
 
         Livro::create([
             'nome' => $this->nome,
-            'data_publicacao' => $this->dataPublicacao,
             'descricao' => $this->descricao,
+            'img_capa' => $this->imgCapa,
             'created_at' => date('Y-m-d H:i:s'),
         ]);
 
-
-        $this->nome = $this->dataPublicacao = $this->descricao = null;
+        $this->nome = $this->imgCapa = $this->descricao = null;
 
         return redirect()->to('/');
     }
