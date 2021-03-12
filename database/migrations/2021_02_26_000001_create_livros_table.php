@@ -25,6 +25,11 @@ class CreateLivrosTable extends Migration
             $table->date('data_publicacao');
             $table->timestamps();
         });
+
+
+        Schema::table('livros', function(Blueprint $table){
+            $table->text('url_capa');
+        });
     }
 
     /**
