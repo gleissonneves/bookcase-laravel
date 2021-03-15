@@ -1,62 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="doc/backend-bookcase.svg" width="150">
+</p>
+<h1 align="center">
+    Bookcase
+</h1>
+
+<p align="center"> 
+📖 Estudo dirigido aos frameworks Laravel,
+Livewire e Tailwind CSS
 </p>
 
-## About Laravel
+<p align="center" style="margin-bottom:50px;">
+ <a href="#🏁Sobre">Sobre</a> •
+ <a href="#🧰Instalação">Instalacao</a> • 
+ <a href="#✅tecnologias">Tecnologias</a> • 
+ <a href="#📄como-usar">Como usar</a> •
+ <a href="#features">Features</a> 
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+<img src="https://img.shields.io/static/v1?label=framework&message=Laravel&color=ff2d20&style=for-the-badge&logo=laravel"/>
+<img src="https://img.shields.io/static/v1?label=framework&message=livewire&color=fb70a9&style=for-the-badge&logo=ghost"/>
+<img src="https://img.shields.io/static/v1?label=framework&message=Tailwind CSS&color=38B2AC&style=for-the-badge&logo=Tailwind css"/>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+### 🏁Sobre
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Bookcase ou estante de livros é um sistema para registros onde o usuário cadastra os livros de sua prateleira física em uma estante virtual para nunca mais esquecer e assim poder compartilhar sua lista de livros com seus amigos!
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+O modelo arquitetural escolhido para o projeto foi o MVC pois o Laravel já oferece uma dinâmica ampla e bastante relevante para criar projetos neste modelo, além disso, oferece recursos por linha de comando que facilita e agiliza o desenvolvimento do projeto. Utilizei o Livewire para criação de componentes lógicos, o que me dá autonomia para reutilização daquele componente em outros sistemas. Algumas vantagens de usar o Livewire é sua reatividade e a possibilidade de “brincar” com Javascript sem sair do lugar além da interação com o PHP ser muito simples, e como vender um carro se somente se tem a carcaça?
+O Front-end foi desenvolvido de modo bem simples somente para a apresentação das partes de um CRUD com isso entra o Tailwind CSS, o framework baseia-se em atomic design e dá uma flexibilidade em componentes complexos. 
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<p align="center">
+    <img src="doc/explicacao-sobre.svg">
+</p>
 
-### Premium Partners
+### 🧰Instalação
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+#### 🚧 Alguns pré-requisitos 🚧
+É necessário que você tenha um servidor e um banco de dados SQL para facilitar o processo.
+Recomendo utilizar Xampp e o SGBD phpmyslq
 
-## Contributing
+#### 🚀 Go 🚀
+Utilize esse comando para clonar o reposiótio:
+```GIT
+git clone https://github.com/gdk46/bookcase.git
+```
+ou baixe clicando [aqui](https://github.com/gdk46/bookcase/archive/master.zip).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Acesse ao diretório e digite os comandos para baixar as dependêcias:
+```
+Acessando o diretório:
+cd bookcase
 
-## Code of Conduct
+Baixar as dependêcias Windows:
+composer install && npm install
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Linux:
+composer install ; nvm install
+```
 
-## Security Vulnerabilities
+### ✅Tecnologias
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* [PHP](https://www.php.net/) version: 7.4.* 
+* [Laravel](https://laravel.com/) version: 8.12 
+* [Livewire](https://laravel-livewire.com/) version: 2.4
+* [Tailwind CSS](https://tailwindcss.com/) version: 2.0.3
+* [Slick carousel](https://kenwheeler.github.io/slick/) version: 1.8.1 
+* [NPM](https://www.npmjs.com/) version: 6.14.11 
+* HTLM
+* CSS
+* SQL
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 📄Como usar
+ - ainda documentando
+
+### Features
+
+- [x] Cadastro de livro
+- [x] Edição de livro
+- [x] exclusão de livro
+- [x] Listagem de livro
