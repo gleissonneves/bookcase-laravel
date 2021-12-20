@@ -71,8 +71,8 @@ composer install ; nvm install
 * [Tailwind CSS](https://tailwindcss.com/) version: 2.0.3
 * [Slick carousel](https://kenwheeler.github.io/slick/) version: 1.8.1 
 * [NPM](https://www.npmjs.com/) version: 6.14.11 
-* HTLM
-* CSS
+* HTML
+* CSS3
 * SQL
 
 
