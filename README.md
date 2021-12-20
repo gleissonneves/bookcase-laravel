@@ -42,10 +42,10 @@ O Front-end foi desenvolvido de modo bem simples somente para a apresentação d
 
 #### 🚧 Alguns pré-requisitos 🚧
 É necessário que você tenha um servidor e um banco de dados SQL para facilitar o processo.
-Recomendo utilizar Xampp e o SGBD phpmyslq
+Recomendo utilizar Xampp e o SGBD phpmysql
 
 #### 🚀 Go 🚀
-Utilize esse comando para clonar o reposiótio:
+Utilize esse comando para clonar o repositório:
 ```GIT
 git clone https://github.com/gdk46/bookcase.git
 ```
